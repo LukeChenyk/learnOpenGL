@@ -124,7 +124,9 @@
     <ClCompile Include="glad.c" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="shaders_class.cpp" />
+    <ClCompile Include="stb_image.cpp" />
     <ClCompile Include="textures.cpp" />
+    <ClCompile Include="transformations.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
@@ -135,6 +137,8 @@
   <ItemGroup>
     <None Include="shaders\4.1.texture.fs" />
     <None Include="shaders\4.1.texture.vs" />
+    <None Include="shaders\4.2.texture.fs" />
+    <None Include="shaders\4.2.texture.vs" />
     <None Include="shaders\shader.fs" />
     <None Include="shaders\shader.vs" />
     <None Include="YiOpenGL.aps" />
