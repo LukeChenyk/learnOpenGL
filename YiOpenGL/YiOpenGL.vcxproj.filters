@@ -36,9 +36,15 @@
     <ClCompile Include="transformations.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="coordinate_systems_depth.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="wintools.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
