@@ -39,6 +39,12 @@
     <ClCompile Include="coordinate_systems_depth.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="camera_circle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="wintools.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
