@@ -45,12 +45,24 @@
     <ClCompile Include="wintools.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="camera_class.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cube.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="color.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="wintools.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="cube.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -67,5 +79,9 @@
     <None Include="shaders\shader.vs" />
     <None Include="shaders\4.2.texture.fs" />
     <None Include="shaders\4.2.texture.vs" />
+    <None Include="shaders\simplecube.vs" />
+    <None Include="shaders\simplecube.fs" />
+    <None Include="shaders\lamp.vs" />
+    <None Include="shaders\lamp.fs" />
   </ItemGroup>
 </Project>

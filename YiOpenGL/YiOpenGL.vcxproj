@@ -70,8 +70,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>E:\workplace\opengl\learnOpenGL\lib\include;$(IncludePath)</IncludePath>
-    <LibraryPath>E:\workplace\opengl\learnOpenGL\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\workspace\opengl\lib\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\workspace\opengl\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>D:\workspace\opengl\lib\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\workspace\opengl\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -91,6 +95,9 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -122,7 +129,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="camera_circle.cpp" />
+    <ClCompile Include="camera_class.cpp" />
+    <ClCompile Include="color.cpp" />
     <ClCompile Include="coordinate_systems_depth.cpp" />
+    <ClCompile Include="cube.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="shaders_class.cpp" />
@@ -132,6 +142,7 @@
     <ClCompile Include="wintools.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="cube.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="wintools.h" />
   </ItemGroup>
@@ -143,8 +154,12 @@
     <None Include="shaders\4.1.texture.vs" />
     <None Include="shaders\4.2.texture.fs" />
     <None Include="shaders\4.2.texture.vs" />
+    <None Include="shaders\lamp.fs" />
+    <None Include="shaders\lamp.vs" />
     <None Include="shaders\shader.fs" />
     <None Include="shaders\shader.vs" />
+    <None Include="shaders\simplecube.fs" />
+    <None Include="shaders\simplecube.vs" />
     <None Include="YiOpenGL.aps" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
