@@ -3,6 +3,9 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <learnopengl/camera.h>
+#include "global.h"
+
+#include <stb_image.h>
 
 extern Camera camera;
 
@@ -27,6 +30,9 @@ void processInput(GLFWwindow *window);
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 
 void mouse_callback(GLFWwindow* window, double xpos, double ypos);
+
 void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
+
+extern unsigned int loadTexture(char const *path);
 
 #endif

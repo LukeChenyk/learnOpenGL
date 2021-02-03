@@ -85,7 +85,7 @@
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -130,11 +130,15 @@
   <ItemGroup>
     <ClCompile Include="camera_circle.cpp" />
     <ClCompile Include="camera_class.cpp" />
-    <ClCompile Include="color.cpp" />
+    <ClCompile Include="global.cpp" />
+    <ClCompile Include="light.cpp" />
     <ClCompile Include="coordinate_systems_depth.cpp" />
     <ClCompile Include="cube.cpp" />
     <ClCompile Include="glad.c" />
+    <ClCompile Include="lighting_textured.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="model_loading.cpp" />
+    <ClCompile Include="depth_testing.cpp" />
     <ClCompile Include="shaders_class.cpp" />
     <ClCompile Include="stb_image.cpp" />
     <ClCompile Include="textures.cpp" />
@@ -143,6 +147,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cube.h" />
+    <ClInclude Include="global.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="wintools.h" />
   </ItemGroup>
@@ -150,6 +155,12 @@
     <ResourceCompile Include="YiOpenGL.rc" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="shaders\1.1.depth_testing.fs" />
+    <None Include="shaders\1.1.depth_testing.vs" />
+    <None Include="shaders\1.2.pbr.fs" />
+    <None Include="shaders\1.2.pbr.vs" />
+    <None Include="shaders\1.model_loading.fs" />
+    <None Include="shaders\1.model_loading.vs" />
     <None Include="shaders\4.1.texture.fs" />
     <None Include="shaders\4.1.texture.vs" />
     <None Include="shaders\4.2.texture.fs" />

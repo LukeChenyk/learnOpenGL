@@ -51,7 +51,19 @@
     <ClCompile Include="cube.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="color.cpp">
+    <ClCompile Include="light.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="global.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="model_loading.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="depth_testing.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lighting_textured.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -63,6 +75,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="cube.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="global.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -83,5 +98,11 @@
     <None Include="shaders\simplecube.fs" />
     <None Include="shaders\lamp.vs" />
     <None Include="shaders\lamp.fs" />
+    <None Include="shaders\1.model_loading.vs" />
+    <None Include="shaders\1.model_loading.fs" />
+    <None Include="shaders\1.1.depth_testing.vs" />
+    <None Include="shaders\1.1.depth_testing.fs" />
+    <None Include="shaders\1.2.pbr.vs" />
+    <None Include="shaders\1.2.pbr.fs" />
   </ItemGroup>
 </Project>
